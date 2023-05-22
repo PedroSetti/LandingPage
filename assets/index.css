@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "PlayfairDisplay-Italic";
+  src: url("../fonts/Source_Serif_Pro/SourceSerifPro-LightItalic.ttf");
+}
+
+@font-face {
   font-family: "Helvetica Neue";
   src: url("Fonts/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix") format("embedded-opentype"),
   url("../fonts/by0u1mbQP6Zw.woff") format("woff"),
@@ -202,15 +207,37 @@
   src:url("Fonts/f1feaed7-6bce-400a-a07e-a893ae43a680.eot?#iefix") format("eot"),url("../fonts/hzWTmxtxcFna.woff") format("woff"),url("../fonts/Pxlkhgi4J7tq.ttf") format("truetype"),url("Fonts/df234d87-eada-4058-aa80-5871e7fbe1c3.svg#df234d87-eada-4058-aa80-5871e7fbe1c3") format("svg");
 }
 
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a { 
+  cursor: pointer;
+}
+
+img {
+  margin-top: 1px;
+  width: 190px;
+}
+
 /*Navbar configuration*/
+
+.navbar {
+  position: relative;
+  width: 100%;
+}
 
   .navbar-brand,
   .navbar-nav .nav-link {
     color: #000;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue Thin', sans-serif;
+    font-family: 'PlayfairDisplay-Italic', sans-serif;
     word-spacing: 2px;
+    margin-left: 10px;
+    
   }
 
   .custom-navbar {
@@ -222,7 +249,7 @@
     display: flex;
     padding-right: 4px;
     padding-left: 4px;
-    padding-top: 30px;
+    padding-top: 40px;
     
   }
 
@@ -232,7 +259,7 @@
   }
 
   .navbar-nav .nav-item {
-      margin-left: 12px;
+    margin-left: 12px;
   }
 
 
