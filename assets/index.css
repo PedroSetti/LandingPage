@@ -273,10 +273,10 @@ img {
   margin-right: auto;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 797px) {
     .banner-image {
-      width: 100%;
-      height: auto;
+      width: 400px;
+      height: 139px;
       object-fit: cover;
       display: block;
       margin-left: auto;
