@@ -260,7 +260,6 @@ img {
 
   .navbar-nav .nav-item {
     margin-left: 12px;
-    
   }
 
 
@@ -268,7 +267,6 @@ img {
 
   .banner-image {
   width: 100%;
-  height: auto;
   object-fit: cover;
   display: block;
   margin-left: auto;
