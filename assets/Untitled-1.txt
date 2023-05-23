@@ -1,0 +1,3 @@
+<img src="./images/Business Meeting_edited.jpg" alt="Business">
+<div class="box-stile"></div>
+<img src="./images/Capturar_edited.jpg" alt="Capturar">

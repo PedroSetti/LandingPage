@@ -227,6 +227,8 @@ img {
 .navbar {
   position: relative;
   width: 100%;
+  height: 70px;
+
 }
 
   .navbar-brand,
@@ -237,7 +239,6 @@ img {
     font-family: 'PlayfairDisplay-Italic', sans-serif;
     word-spacing: 2px;
     margin-left: 10px;
-    
   }
 
   .custom-navbar {
@@ -288,5 +289,35 @@ img {
   }
 
   /*sobre nós */
+
+  .box-stile{
+    width: 269px;
+    height: 159px;
+    background-color: #a00000;
+  }
   
-  
+  .sbn{
+    padding-top: 38px;
+    font-size: 38px;
+    font-family:"HelveticaNeueW10-55Roma";
+    text-align: center;
+  }
+
+
+
+  .content-sbn {
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid red;
+    
+  }
+
+  .content-sbn span{
+    border: 1px solid red;
+
+  }
+
+  .spaces {
+    font-size: 17px;
+    text-align: justify;
+  }
