@@ -290,20 +290,40 @@ img {
 
   /*sobre nós */
 
+
   .box-stile{
-    width: 269px;
-    height: 159px;
+    width: 280px;
+    height: 139px;
     background-color: #a00000;
-  }
-  
-  .sbn{
-    padding-top: 38px;
-    font-size: 38px;
-    font-family:"HelveticaNeueW10-55Roma";
-    text-align: center;
+    margin-left: 90px;
   }
 
-  .spaces {
+.img-fx img {
+  width: 292px;
+  height: 195px;
+  margin-bottom: -42px;
+  margin-left: 49px;
+  object-fit: cover;
+  position: static;
+}
+
+.img-ft img{
+  width: 292px;
+  height: 195px;
+  margin-top: -42px;
+  margin-left: 143px;
+  object-fit: cover;
+  position: relative;
+}
+
+  
+  .conteudo {
+    width: 57%;
+    height: 340px;
+    margin-left: 500px;
+    margin-top: -402px;
+  }
+
+  .conteudo p{
     font-size: 17px;
-    text-align: justify;
   }
