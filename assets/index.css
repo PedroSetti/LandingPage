@@ -224,6 +224,48 @@ img {
 
 /*Navbar configuration*/
 
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 0.5rem;
+    background-color: #f8f9fa;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Add this CSS code to center the "Sobre nós" heading */
+@media (max-width: 992px) {
+  .conteudo h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
 .navbar {
   position: relative;
   width: 100%;
@@ -243,7 +285,6 @@ img {
 
   .custom-navbar {
     height: 74px; 
-    /* Ajuste a altura conforme necessário */
   }
 
   .navbar-nav .nav-link {
@@ -274,13 +315,13 @@ img {
   margin-right: auto;
   }
 
-  @media screen and (max-width: 797px) {
+  @media screen and (max-width: 768px) {
     .banner-image {
-      width: 400px;
-      height: 139px;
+      width: 1700px;
+      height: 389px;
       object-fit: cover;
       display: block;
-      margin-left: auto;
+      margin-left: 342px;
       margin-right: auto;
       position: relative;
       left: 50%;
@@ -290,6 +331,31 @@ img {
 
   /*sobre nós */
 
+  @media screen and (max-width: 768px) {
+    .box-stile {
+      width: 280px;
+      height: 139px;
+      background-color: #a00000;
+      margin-left: 90px;
+    }
+    .img-fx img {
+      width: 92px;
+      height: 95px;
+      margin-bottom: -42px;
+      margin-left: 49px;
+      object-fit: cover;
+      position: static;
+    }
+    
+    .img-ft img{
+      width: 292px;
+      height: 195px;
+      margin-top: -42px;
+      margin-left: 143px;
+      object-fit: cover;
+      position: relative;
+    }
+  }
 
   .box-stile{
     width: 280px;
