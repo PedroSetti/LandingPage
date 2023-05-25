@@ -445,16 +445,33 @@ img {
   
   /* Estilos para 600px */
   @media screen and (max-width: 600px) {
+    .sbn {
+      margin-top: 40px;
+      margin-left: -140px;
+      margin-bottom: 40px;
+    }
+    
     .box-stile {
       width: 320px;
       height: 160px;
-      margin-left: 30px;
+      margin-left: -130px;
     }
   
+    .img-fx img{
+      margin-left: -563px;
+      width: 190px;
+      left: 92%;
+      padding-top: 60px;
+    }
+
     .img-ft img {
       margin-left: 83px;
+      width: 190px;
+      padding-bottom: 70px;
+      left: 62%;
     }
   
+   
     .conteudo {
       width: 80%;
       margin-left: 30px;
@@ -506,16 +523,3 @@ img {
   }
 
  
-  /* Estilos gerais para dispositivos móveis */
-  @media only screen and (max-width: 600px) {
-      .sbn h2 {
-          font-size: 25px;
-          text-align: center;
-          margin-left: 10px;
-      }
-      .conteudo {
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-      }
-  }
