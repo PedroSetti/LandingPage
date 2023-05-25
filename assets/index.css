@@ -224,7 +224,9 @@ img {
 
 /*Navbar configuration*/
 
-@media screen and(max-width: 768px) {
+
+
+@media(max-width: 768px) {
 
   .navbar-collapse {
     position: absolute;
@@ -252,10 +254,7 @@ img {
     right: 0.5rem;
   }
 
-  .banner-image {
-    width: 100%;
-    height: auto;
-  }
+ 
   .navbar-brand,
   .navbar-nav .nav-link {
     color: #000;
@@ -307,9 +306,6 @@ img {
     margin-left: 10px;
   }
 
-  .custom-navbar {
-    height: 74px; 
-  }
 
   .navbar-nav .nav-link {
     display: flex;
@@ -370,34 +366,22 @@ img {
     }
   }
 
-  /*sobre nós */
-
-  @media screen and (max-width: 768px) {
-    .box-stile {
-      width: 280px;
-      height: 139px;
-      background-color: #a00000;
-      margin-left: 90px;
-    }
-    .img-fx img {
-      width: 92px;
-      height: 95px;
-      margin-bottom: -42px;
-      margin-left: 49px;
+  @media screen and (max-width: 468px) {
+    .banner-image {
+      padding-top: 11px;
+      width: 1000px;
+      height: 289px;
       object-fit: cover;
-      position: static;
-    }
-    
-    .img-ft img{
-      width: 292px;
-      height: 195px;
-      margin-top: -42px;
-      margin-left: 143px;
-      object-fit: cover;
+      display: fixed;
+      margin-left: 190px;
+      margin-right: 0;
       position: relative;
+      left: 52%;
+      transform: translateX(-50%);
     }
   }
 
+  /*sobre nós */
   .box-stile{
     width: 280px;
     height: 139px;
@@ -436,4 +420,87 @@ img {
     text-align: justify;
     width: 80%;
     margin-left: 70px;
+  }
+
+  @media screen and (max-width: 468px) {
+    .box-stile {
+      width: 240px;
+      height: 120px;
+      margin-left: 30px;
+    }
+  
+    .img-ft img {
+      margin-left: 83px;
+    }
+  
+    .conteudo {
+      width: 80%;
+      margin-left: 30px;
+    }
+  
+    .conteudo p {
+      margin-left: 20px;
+    }
+  }
+  
+  /* Estilos para 600px */
+  @media screen and (max-width: 600px) {
+    .box-stile {
+      width: 320px;
+      height: 160px;
+      margin-left: 30px;
+    }
+  
+    .img-ft img {
+      margin-left: 83px;
+    }
+  
+    .conteudo {
+      width: 80%;
+      margin-left: 30px;
+    }
+  
+    .conteudo p {
+      margin-left: 20px;
+    }
+  }
+  
+  /* Estilos para 768px */
+  @media screen and (max-width: 768px) {
+
+    .sbn {
+      margin-top: 40px;
+      margin-left: -440px;
+      margin-bottom: 40px;
+    }
+
+    .box-stile {
+      width: 203px;
+      height: 100px;
+      margin-left: 580px;
+    } 
+
+    .img-fx img{
+      margin-left: 563px;
+      width: 190px;
+      left: 92%;
+      padding-top: 60px;
+    }
+
+    .img-ft img {
+      margin-left: 83px;
+      width: 190px;
+      padding-bottom: 70px;
+      left: 62%;
+    }
+  
+    .conteudo {
+      width: 80%;
+      margin-left: 30px;
+    }
+  
+    .conteudo p {
+      margin-left: 20px;
+      color: gray;
+    }
   }
