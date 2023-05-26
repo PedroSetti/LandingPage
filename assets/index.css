@@ -338,11 +338,12 @@ img {
     font-family: 'PlayfairDisplay-Italic', sans-serif;
     word-spacing: 2px;
     margin-left: 10px;
+    
   }
 
   .navbar-brand img{
     float: left;
-    margin-top: 4px;
+    margin-top: -14px;
 
   }
 
@@ -351,7 +352,7 @@ img {
     display: block;
     padding-right: 4px;
     padding-left: 4px;
-    padding-top: 40px;
+    padding-top: 30px;
     
   }
 
