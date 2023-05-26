@@ -226,6 +226,10 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 
 }
+html, body{
+  scroll-behavior: auto;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -253,11 +257,9 @@ img {
 
 /*Navbar configuration*/
 
-
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
   .navbar-collapse {
-    display: block;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -268,7 +270,7 @@ img {
   }
 
   .navbar-nav {
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -276,7 +278,6 @@ img {
   .nav-item {
     width: 100%;
     text-align: left;
-    display: block;
   }
 
   .navbar-toggler {
@@ -286,7 +287,6 @@ img {
     right: 0.5rem;
   }
 
- 
   .navbar-brand,
   .navbar-nav .nav-link {
     display: block;
@@ -298,23 +298,31 @@ img {
     margin-left: 10px;
   }
 
-
-
   .navbar-nav .nav-link {
-    display: inline-block;
+    display: block;
     padding-right: 4px;
     padding-left: 4px;
     padding-top: 40px;
-    
   }
 
   .navbar-nav .nav-link:hover {
     color: #ff0000;
-
   }
 
   .navbar-nav .nav-item {
     margin-left: 12px;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70px;
+  }
+
+  .navbar-brand img {
+    float: none;
+    margin-top: 0;
   }
 }
 
@@ -323,108 +331,92 @@ img {
 
 
 .navbar {
-  display: block;
+  display: flex;
   position: relative;
   width: 100%;
   height: 70px;
-
 }
 
-  .navbar-brand,
-  .navbar-nav .nav-link {
-    color: #000;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: 'PlayfairDisplay-Italic', sans-serif;
-    word-spacing: 2px;
-    margin-left: 10px;
-    
-  }
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'PlayfairDisplay-Italic', sans-serif;
+  word-spacing: 2px;
+  margin-left: 10px;
+}
 
-  .navbar-brand img{
-    float: left;
-    margin-top: -14px;
+.navbar-brand img {
+  margin-top: -14px;
+}
 
-  }
+.navbar-nav .nav-link {
+  display: block;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-top: 30px;
+}
 
+.navbar-nav .nav-link:hover {
+  color: #ff0000;
+}
 
-  .navbar-nav .nav-link {
-    display: block;
-    padding-right: 4px;
-    padding-left: 4px;
-    padding-top: 30px;
-    
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: #ff0000;
-
-  }
-
-  .navbar-nav .nav-item {
-    margin-left: 12px;
-  }
-
+.navbar-nav .nav-item {
+  margin-left: 12px;
+}
 
   /*Banner*/
 
   .banner-image {
-  display: block;
-  padding-top: 10px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    padding-top: 10px;
+    width: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  
   @media screen and (max-width: 768px) {
     .banner-image {
-      display: block;
       padding-top: 11px;
-      width: 1700px;
+      width: 100%;
       height: 389px;
       object-fit: cover;
-      display: fixed;
-      margin-left: 342px;
+      margin-left: auto;
       margin-right: auto;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
   }
-
+  
   @media screen and (max-width: 600px) {
     .banner-image {
-      display: block;
       padding-top: 11px;
-      width: 1700px;
-      height: 389px;
+      width: 100%;
+      height: 289px;
       object-fit: cover;
-      display: fixed;
-      margin-left: 342px;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    .banner-image {
+      padding-top: 11px;
+      width: 100%;
+      height: 289px;
+      object-fit: cover;
+      margin-left: auto;
       margin-right: auto;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
   }
-
-  @media screen and (max-width: 468px) {
-    .banner-image {
-      display: block;
-      padding-top: 11px;
-      width: 1000px;
-      height: 289px;
-      object-fit: cover;
-      display: fixed;
-      margin-left: 190px;
-      margin-right: 0;
-      position: relative;
-      left: 52%;
-      transform: translateX(-50%);
-    }
-  }
+  
 
   /*sobre nós */
   .sbn {
@@ -433,32 +425,31 @@ img {
     margin-left: 140px;
     margin-bottom: 0;
   }
-
-  .box-stile{
+  
+  .box-style {
     width: 280px;
     height: 139px;
     background-color: #a00000;
     margin-left: 90px;
   }
-
-.img-fx img {
-  width: 292px;
-  height: 195px;
-  margin-bottom: -42px;
-  margin-left: 49px;
-  object-fit: cover;
-  position: static;
-}
-
-.img-ft img{
-  width: 292px;
-  height: 195px;
-  margin-top: -42px;
-  margin-left: 143px;
-  object-fit: cover;
-  position: relative;
-}
-
+  
+  .img-fx img {
+    width: 292px;
+    height: 195px;
+    margin-bottom: -42px;
+    margin-left: 49px;
+    object-fit: cover;
+    position: static;
+  }
+  
+  .img-ft img {
+    width: 292px;
+    height: 195px;
+    margin-top: -42px;
+    margin-left: 143px;
+    object-fit: cover;
+    position: relative;
+  }
   
   .conteudo {
     width: 57%;
@@ -466,16 +457,17 @@ img {
     margin-left: 500px;
     margin-top: -402px;
   }
-
-  .conteudo p{
+  
+  .conteudo p {
     font-size: 17px;
     text-align: justify;
     width: 80%;
     margin-left: 70px;
   }
+  
 
   @media screen and (max-width: 468px) {
-    .box-stile {
+    .box-style {
       width: 240px;
       height: 120px;
       margin-left: 30px;
@@ -503,7 +495,7 @@ img {
       margin-bottom: 40px;
     }
     
-    .box-stile {
+    .box-style {
       width: 320px;
       height: 160px;
       margin-left: -130px;
@@ -512,18 +504,15 @@ img {
     .img-fx img{
       margin-left: -563px;
       width: 190px;
-      left: 92%;
       padding-top: 60px;
     }
-
+  
     .img-ft img {
       margin-left: 83px;
       width: 190px;
       padding-bottom: 70px;
-      left: 62%;
     }
   
-   
     .conteudo {
       width: 80%;
       margin-left: 30px;
@@ -536,31 +525,28 @@ img {
   
   /* Estilos para 768px */
   @media screen and (max-width: 768px) {
-
     .sbn {
       margin-top: 40px;
       margin-left: -440px;
       margin-bottom: 40px;
     }
-
-    .box-stile {
+  
+    .box-style {
       width: 203px;
       height: 100px;
       margin-left: 580px;
     } 
-
+  
     .img-fx img{
       margin-left: 563px;
       width: 190px;
-      left: 92%;
       padding-top: 60px;
     }
-
+  
     .img-ft img {
       margin-left: 83px;
       width: 190px;
       padding-bottom: 70px;
-      left: 62%;
     }
   
     .conteudo {
@@ -573,5 +559,4 @@ img {
       color: gray;
     }
   }
-
- 
+  
