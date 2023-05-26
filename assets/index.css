@@ -208,9 +208,37 @@
 }
 
 
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   padding: 0;
   margin: 0;
+  -webkit-text-size-adjust: none;
+  background: #f0f0f0;
 }
 
 a { 
@@ -225,10 +253,10 @@ img {
 /*Navbar configuration*/
 
 
-
 @media(max-width: 768px) {
 
   .navbar-collapse {
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -239,6 +267,7 @@ img {
   }
 
   .navbar-nav {
+    display: block;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -246,9 +275,11 @@ img {
   .nav-item {
     width: 100%;
     text-align: left;
+    display: block;
   }
 
   .navbar-toggler {
+    display: block;
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -257,6 +288,7 @@ img {
  
   .navbar-brand,
   .navbar-nav .nav-link {
+    display: block;
     color: #000;
     font-size: 20px;
     text-transform: uppercase;
@@ -268,7 +300,7 @@ img {
 
 
   .navbar-nav .nav-link {
-    display: flex;
+    display: inline-block;
     padding-right: 4px;
     padding-left: 4px;
     padding-top: 40px;
@@ -304,6 +336,12 @@ img {
     font-family: 'PlayfairDisplay-Italic', sans-serif;
     word-spacing: 2px;
     margin-left: 10px;
+  }
+
+  .navbar-brand img{
+    float: left;
+    margin-top: 4px;
+
   }
 
 
@@ -382,6 +420,12 @@ img {
   }
 
   /*sobre nós */
+  .sbn {
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-bottom: 0;
+  }
+
   .box-stile{
     width: 280px;
     height: 139px;
