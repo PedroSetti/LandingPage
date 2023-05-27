@@ -209,7 +209,12 @@
 
 
 
-html, body{
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+html, body {
   scroll-behavior: auto;
 }
 
@@ -217,7 +222,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -227,9 +234,10 @@ body {
   margin: 0;
   -webkit-text-size-adjust: none;
   background: #f0f0f0;
+  line-height: 1;
 }
 
-a { 
+a {
   cursor: pointer;
 }
 
@@ -245,10 +253,9 @@ img {
   }
 }
 
-/*Navbar configuration*/
+/* Navbar configuration */
 
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
   .navbar-collapse {
     display: block;
     position: absolute;
@@ -290,27 +297,24 @@ img {
     margin-left: 10px;
   }
 
-
   .navbar-nav .nav-link {
     display: flex;
     display: inline-block;
     padding-right: 4px;
     padding-left: 4px;
     padding-top: 40px;
-    
   }
+
   .navbar-nav .nav-link:hover {
     color: #ff0000;
   }
+
   .navbar-nav .nav-item {
     margin-left: 12px;
   }
 }
 
-
-
-
-
+/* Navbar configuration normal screen */
 
 .navbar {
   display: flex;
@@ -330,11 +334,11 @@ img {
 }
 
 .navbar-brand img {
-  margin-top: -14px;
+  margin-top: -1px;
 }
 
 .navbar-brand:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 .navbar-nav .nav-link {
@@ -352,60 +356,56 @@ img {
   margin-left: 12px;
 }
 
-  /*Banner*/
+/* Banner */
 
-  .banner-image{
+.banner-image {
+  width: 1900px; 
+  height: 598px; 
+  object-fit: cover; 
+  object-position: 50% 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-image {
+    padding-top: 11px;
+    width: 1288px;
+    height: 389px;
+    object-fit: cover;
+    margin-left: 400px;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-image {
+    padding-top: 11px;
     width: 100%;
-    height: auto;
+    height: 289px;
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
+    transform: translateX(-50%);
   }
-  
-  
-  @media screen and (max-width: 768px) {
-    .banner-image {
-      padding-top: 11px;
-      width: 100%;
-      height: 389px;
-      object-fit: cover;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .banner-image {
-      padding-top: 11px;
-      width: 100%;
-      height: 289px;
-      object-fit: cover;
-      margin-left: auto;
-      margin-right: auto;
-      transform: translateX(-50%);
-    }
-  }
-  
-  @media screen and (max-width: 468px) {
-    .banner-image {
-      padding-top: 11px;
-      width: 100%;
-      height: 289px;
-      object-fit: cover;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-  
+}
 
-  /*sobre nós */
+@media screen and (max-width: 468px) {
+  .banner-image {
+    padding-top: 11px;
+    width: 100%;
+    height: 289px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+  /* Sobre nós */
+  
   .sbn {
     display: block;
     margin-top: 30px;
@@ -450,10 +450,8 @@ img {
     text-align: justify;
     width: 80%;
     margin-left: 70px;
-    text-indent: 29px;
   }
   
-
   @media screen and (max-width: 468px) {
     .box-style {
       width: 240px;
@@ -475,7 +473,6 @@ img {
     }
   }
   
-  /* Estilos para 600px */
   @media screen and (max-width: 600px) {
     .sbn {
       margin-top: 40px;
@@ -489,7 +486,7 @@ img {
       margin-left: -130px;
     }
   
-    .img-fx img{
+    .img-fx img {
       margin-left: -563px;
       width: 190px;
       padding-top: 60px;
@@ -511,7 +508,6 @@ img {
     }
   }
   
-  /* Estilos para 768px */
   @media screen and (max-width: 768px) {
     .sbn {
       margin-top: 40px;
@@ -525,7 +521,7 @@ img {
       margin-left: 580px;
     } 
   
-    .img-fx img{
+    .img-fx img {
       margin-left: 563px;
       width: 190px;
       padding-top: 60px;
