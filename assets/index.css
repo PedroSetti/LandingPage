@@ -255,6 +255,13 @@ img {
   width: 190px;
 }
 
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*Navbar configuration*/
 
 @media (max-width: 768px) {
@@ -314,7 +321,7 @@ img {
   }
 
   .navbar {
-    display: flex;
+    display: block;
     position: relative;
     width: 100%;
     height: 70px;
