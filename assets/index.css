@@ -368,39 +368,29 @@ img {
 @media screen and (max-width: 768px) {
   .banner-image {
     padding-top: 11px;
-    width: 1288px;
-    height: 389px;
+    width: 1280px;
+    height: 390px;
     object-fit: cover;
-    margin-left: 400px;
     margin-right: auto;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .banner-image {
     padding-top: 11px;
-    width: 100%;
-    height: 289px;
+    width: 1100px;
+    height: 389px;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(-50%);
   }
 }
+*/
 
 @media screen and (max-width: 468px) {
   .banner-image {
     padding-top: 11px;
-    width: 100%;
+    width: 800px;
     height: 289px;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
@@ -453,18 +443,20 @@ img {
   }
   
   @media screen and (max-width: 468px) {
+
     .box-style {
-      width: 240px;
+      width: 0px;
       height: 120px;
       margin-left: 30px;
     }
   
     .img-ft img {
-      margin-left: 83px;
+      width: 0px;
+      padding-top:  -83px;
     }
   
     .conteudo {
-      width: 80%;
+      width: 100%;
       margin-left: 30px;
     }
   
@@ -473,62 +465,28 @@ img {
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .sbn {
-      margin-top: 40px;
-      margin-left: -140px;
-      margin-bottom: 40px;
-    }
-    
-    .box-style {
-      width: 320px;
-      height: 160px;
-      margin-left: -130px;
-    }
-  
-    .img-fx img {
-      margin-left: -563px;
-      width: 190px;
-      padding-top: 60px;
-    }
-  
-    .img-ft img {
-      margin-left: 83px;
-      width: 190px;
-      padding-bottom: 70px;
-    }
-  
-    .conteudo {
-      width: 80%;
-      margin-left: 30px;
-    }
-  
-    .conteudo p {
-      margin-left: 20px;
-    }
-  }
-  
+
   @media screen and (max-width: 768px) {
     .sbn {
       margin-top: 40px;
-      margin-left: -440px;
+      margin-left: -320px;
       margin-bottom: 40px;
     }
   
     .box-style {
-      width: 203px;
+      width: 0px;
       height: 100px;
-      margin-left: 580px;
+      margin-left: 0px;
     } 
   
     .img-fx img {
-      margin-left: 563px;
+      margin-left: 518px;
       width: 190px;
       padding-top: 60px;
     }
   
     .img-ft img {
-      margin-left: 83px;
+      margin-left: 518px;
       width: 190px;
       padding-bottom: 70px;
     }
