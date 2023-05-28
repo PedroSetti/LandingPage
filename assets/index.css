@@ -359,10 +359,9 @@ img {
 /* Banner */
 
 .banner-image {
-  width: 1900px; 
-  height: 598px; 
-  object-fit: cover; 
-  object-position: 50% 50%;
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;   
 }
 
 @media screen and (max-width: 768px) {
