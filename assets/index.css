@@ -248,7 +248,7 @@ img {
 
 @media (max-width: 768px) {
   body {
-    width: 100%;
+    max-width: 768;
     height: auto;
   }
 }
@@ -262,7 +262,7 @@ img {
     top: 100%;
     left: 0;
     z-index: 1;
-    width: 100%;
+   max-width: 768;
     padding-top: 0.5rem;
     background-color: #f8f9fa;
   }
@@ -398,7 +398,7 @@ img {
   .sbn {
     display: block;
     margin-top: 30px;
-    margin-left: 140px;
+    margin-left: 180px;
     margin-bottom: 0;
   }
   
@@ -427,18 +427,20 @@ img {
     position: relative;
   }
   
-  .conteudo {
+  .row .col-2{
     width: 57%;
     height: 340px;
     margin-left: 500px;
     margin-top: -402px;
+
   }
   
-  .conteudo p {
+  .col-2 p {
     font-size: 17px;
     text-align: justify;
     width: 80%;
     margin-left: 70px;
+    color: #808080;
   }
   
 
@@ -458,12 +460,12 @@ img {
     } 
   
   
-    .conteudo {
+    .row .col-2 {
       width: 100%;
       margin-left: 30px;
     }
   
-    .conteudo p {
+    .col p {
       margin-left: 20px;
       color: gray;
     }
@@ -485,23 +487,25 @@ img {
   
   @media screen and (max-width: 468px) {
     .img-fx img {
-      margin-left: 198px;
+      margin-left: 170px;
       width: 190px;
-      padding-top: -60px;
+      padding-top: 60px;
     }
   
     .img-ft img {
       margin-left: 50px;
       width: 190px;
-      padding-bottom: 70px;
+      padding-bottom: -70px;
+
     }
   
-    .conteudo {
+    .row .col-2 {
       width: 100%;
+      padding-top: 140px;
       margin-left: 30px;
     }
   
-    .conteudo p {
+    .col-2 p {
       margin-left: 20px;
     }
   }
