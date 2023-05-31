@@ -225,14 +225,15 @@ a {
 
 
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
 
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    max-width: 768;
+    height: auto;
+  }
+}
 
 
 /* Navbar configuration */
@@ -537,7 +538,7 @@ a {
     }
   
     .col p {
-      margin-left: 2px;
+      margin-left: 27px;
       color: gray;
       text-align: justify;
     }
