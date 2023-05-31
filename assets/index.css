@@ -209,7 +209,8 @@
 
 
 
-body {
+html, body {
+  border: 1px solid red;
   display: block;
   padding: 0;
   margin: 0;
@@ -223,18 +224,27 @@ a {
   cursor: pointer;
 }
 
-
-
+img {
+  margin-top: 1px;
+  width: 190px;
+}
 
 
 @media (max-width: 768px) {
   body {
-    width: 100%;
     max-width: 768;
     height: auto;
+    width: 768;
   }
 }
 
+@media (max-width: 468px) {
+  body {
+    width: 468;
+    height: 100%;
+
+  }
+}
 
 /* Navbar configuration */
 
@@ -525,24 +535,6 @@ a {
       margin-bottom: 40px;
     }
   
-    .box-style {
-      width: 0px;
-      height: 100px;
-      margin-left: 0px;
-    } 
-  
-  
-    .row .col-2 {
-      width: 100%;
-      margin-left: 0px;
-    }
-  
-    .col p {
-      margin-left: 27px;
-      color: gray;
-      text-align: justify;
-    }
-
     .img-fx img {
       margin-left: 10px;
       margin-right: auto;
@@ -562,6 +554,26 @@ a {
       padding-top: 0;
 
     }
+    .box-style {
+      width: 0px;
+      height: 100px;
+      margin-left: 0px;
+
+    } 
+  
+  
+    .row .col-2 {
+      width: 100%;
+      margin-left: 0px;
+    }
+  
+    .col p {
+      margin-left: 27px;
+      color: gray;
+      text-align: justify;
+    }
+
+
 
   
   }
@@ -597,8 +609,6 @@ a {
    
     }
 
-
-  
     .container .col {
       width: 100%;
       height: 100%;

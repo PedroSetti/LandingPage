@@ -1,6 +1,7 @@
 <div class="box-stile"></div>
 <img src="./images/Business Meeting_edited.jpg" alt="Business">
 <img src="./images/Capturar_edited.jpg" alt="Capturar">
+border: 1px solid red;
 
       <p class="spaces"></p>
       <span>Fundado em 1985, o escritório de advocacia Gomes & Gomes Advogados Associados oferece, 
