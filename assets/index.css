@@ -291,7 +291,7 @@ img {
     top: 100%;
     left: 0;
     z-index: 1;
-    max-width: 768;
+    max-width: 768px;
     padding-top: 0.5rem;
     margin-top: 12px;
     padding-left: 1px;
@@ -346,14 +346,7 @@ img {
     margin-left: 12px;
   }
 
-  .navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
-    width: 100%;
-    transition: all 0.5s;
-  }
+
 }
 
 @media (max-width: 468px) {
@@ -363,7 +356,7 @@ img {
     top: 100%;
     left: 0;
     z-index: 1;
-    max-width: 468;
+    max-width: 468px;
     padding-top: 0.5rem;
     margin-top: 12px;
     padding-left: 4px;
@@ -419,14 +412,7 @@ img {
     margin-left: 12px;
   }
 
-  .navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
-    width: 100%;
-    transition: all 0.5s;
-  }
+
 }
 
 /* Banner */
@@ -457,52 +443,7 @@ img {
 
 /* Sobre nós */
 
-.sbn {
-  display: block;
-  margin-top: 30px;
-  margin-left: 180px;
-  margin-bottom: 0;
-}
 
-.box-style {
-  width: 280px;
-  height: 139px;
-  background-color: #a00000;
-  margin-left: 90px;
-}
-
-.img-fx img {
-  width: 292px;
-  height: 195px;
-  margin-bottom: -42px;
-  margin-left: 49px;
-  object-fit: cover;
-  position: static;
-}
-
-.img-ft img {
-  width: 292px;
-  height: 195px;
-  margin-top: -42px;
-  margin-left: 143px;
-  object-fit: cover;
-  position: relative;
-}
-
-.container .col {
-  width: 57%;
-  height: 340px;
-  margin-left: 500px;
-  margin-top: -402px;
-}
-
-.col p {
-  font-size: 17px;
-  text-align: justify;
-  width: 80%;
-  margin-left: 70px;
-  color: #808080;
-}
 
 @media screen and (max-width: 768px) {
   .sbn {
@@ -596,4 +537,52 @@ img {
     margin-left: 40px;
     text-align: justify;
   }
+}
+
+
+.sbn {
+  display: block;
+  margin-top: 30px;
+  margin-left: 180px;
+  margin-bottom: 0;
+}
+
+.box-style {
+  width: 280px;
+  height: 139px;
+  background-color: #a00000;
+  margin-left: 90px;
+}
+
+.img-fx img {
+  width: 292px;
+  height: 195px;
+  margin-bottom: -42px;
+  margin-left: 49px;
+  object-fit: cover;
+  position: static;
+}
+
+.img-ft img {
+  width: 292px;
+  height: 195px;
+  margin-top: -42px;
+  margin-left: 143px;
+  object-fit: cover;
+  position: relative;
+}
+
+.container .col {
+  width: 57%;
+  height: 340px;
+  margin-left: 500px;
+  margin-top: -402px;
+}
+
+.col  {
+  font-size: 17px;
+  text-align: justify;
+  width: 80%;
+  margin-left: 70px;
+  color: #808080;
 }
