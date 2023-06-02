@@ -401,6 +401,10 @@ img {
   color: #ff0000;
 }
 
+.navbar-nav .nav-link:active {
+  color: #a00000;
+}
+
 .navbar-nav .nav-item {
   margin-left: 12px;
 }
@@ -482,6 +486,7 @@ img {
     margin-left: 500px;
     margin-top: -402px;
 
+
   }
   
   .col-2 p {
@@ -490,6 +495,7 @@ img {
     width: 80%;
     margin-left: 70px;
     color: #808080;
+   
   }
   
 
@@ -549,7 +555,7 @@ img {
 
     .sbn {
       margin-top: 20px;
-      margin-left: -244px;
+      margin-left: -304px;
       margin-bottom: 40px;
     }
     .img-fx img {
@@ -582,5 +588,32 @@ img {
     .col-2 p {
       margin-left: 40px;
       text-align: justify;
+    }
+  }
+
+
+
+  /* Área de atuação */
+
+  .atua {
+    margin-top: 220px;
+    margin-left: -244px;
+    margin-bottom: 40px;
+    border: 1px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .atua {
+      margin-top: 40px;
+      margin-left: -270px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width: 468px) {
+    .atua {
+      margin-top: 40px;
+      margin-left: -270px;
+      margin-bottom: 40px;
     }
   }
