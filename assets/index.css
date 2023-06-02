@@ -248,11 +248,12 @@ img {
     top: 100%;
     left: 0;
     z-index: 1;
-   max-width: 768px;
+    width: 100%;
+    max-width: 768px;
     padding-top: 0.5rem;
     margin-top: 12px;
     padding-left: 1px;
-    background-color: #f8f9fa;
+    background-color: #fff;
     border: 1px solid #ccc;
    
   }
@@ -262,11 +263,14 @@ img {
     margin-right: 10px;
     flex-direction: column;
     align-items: flex-start;
+ justify-content: space-between;
+ border: 1px solid red;
   }
 
   .nav-item {
     width: 100%;
     text-align: left;
+    border: 1px solid red;
     
   }
 
@@ -604,6 +608,10 @@ img {
     display: flex;
   }
 
+  .clm:first-child {
+    margin-left: 50px;
+  }
+
   .clm {
     flex: 1; 
     padding: 3px;
@@ -612,9 +620,11 @@ img {
   }
 
   .clm img {
-    width: 290px;
+    width: 310px;
     max-width: 100%; 
     height: auto; 
+    padding: 8px;
+    padding-bottom: 8px;
   }
   
 
@@ -637,18 +647,19 @@ img {
     }
     
     .clm:first-child {
-      margin-left: 50px;
+      margin-left: 90px;
     }
     
     .clm img {
       width: 300px;
       max-width: 100%; 
       height: auto;
-
+      padding: 8px;
+      padding-bottom: 8px;
     }
     
   }
-
+  
   @media screen and (max-width: 468px) {
     .atua {
       margin-top: 40px;
@@ -663,20 +674,52 @@ img {
     
     .clm {
       float: left;
-      width: 30%; 
-      padding: 3px;
+      width: 60%; 
+      padding: 20px;
     }
     
     .clm:first-child {
-      margin-left: 4px;
+      margin-left: 75px;
     }
 
     .clm img {
-      width: 249px;
+      width: 149px;
       max-width: 100%; 
       height: auto;
-
+      padding: 8px;
+      padding-bottom: 8px;
     }
 
-  
+  }
+
+  @media screen and (max-width: 412px) {
+    .atua {
+      margin-top: 40px;
+      margin-left: -270px;
+      margin-bottom: 40px;
+    }
+
+    .row {
+      display:flex; 
+      justify-content: space-between; 
+    }
+    
+    .clm {
+      float: left;
+      width: 60%; 
+      padding: 20px;
+    }
+    
+    .clm:first-child {
+      margin-left: 50px;
+    }
+
+    .clm img {
+      width: 149px;
+      max-width: 100%; 
+      height: auto;
+      padding: 8px;
+      padding-bottom: 8px;
+    }
+
   }
