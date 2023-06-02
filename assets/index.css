@@ -600,11 +600,53 @@ img {
     border: 1px;
   }
 
+  .row {
+    display: flex; /* Define o display como flex */
+    justify-content: space-between; /* Alinha as imagens com espaçamento igual entre elas */
+  }
+  
+  .clm {
+    flex: 1; /* Distribui o espaço igualmente entre as colunas */
+  }
+  
+  .clm:first-child {
+    margin-left: 20px;
+  }
+
+  .clm img {
+    width: 290px;
+    max-width: 100%; /* Define a largura máxima da imagem para ocupar todo o espaço da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+
   @media screen and (max-width: 768px) {
     .atua {
       margin-top: 40px;
       margin-left: -270px;
       margin-bottom: 40px;
+    }
+    
+    .row {
+      display:block; 
+      justify-content: space-between; 
+    }
+    
+    .clm {
+      float: left;
+      width: 30%; 
+      padding: 3px;
+    }
+    
+    .clm:first-child {
+      margin-left: 40px;
+    }
+    
+    .clm img {
+      width: 300px;
+      max-width: 100%; 
+      height: auto;
+
     }
   }
 
@@ -613,5 +655,24 @@ img {
       margin-top: 40px;
       margin-left: -270px;
       margin-bottom: 40px;
+    }
+
+    .row {
+      display:block; 
+      justify-content: space-between; 
+    }
+    
+    .clm {
+      float: left;
+      width: 30%; 
+      padding: 3px;
+    }
+    
+
+    .clm img {
+      width: 400px;
+      max-width: 100%; 
+      height: auto;
+
     }
   }
