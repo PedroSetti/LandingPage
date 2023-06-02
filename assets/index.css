@@ -668,6 +668,9 @@ img {
       padding: 3px;
     }
     
+    .clm:first-child {
+      margin-left: 24px;
+    }
 
     .clm img {
       width: 400px;
