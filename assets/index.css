@@ -520,7 +520,7 @@ img {
       margin-left: auto;
       margin-right: 50px;
       margin-top: -20px;
-      display: block;
+      display: none;
       width: 240px;
       padding-top: 0;
       padding-bottom: 10px;
@@ -534,17 +534,17 @@ img {
     }
   
     .container .col-2 {
-      width: 60%;
+      width: 100%;
       height: auto;
       margin-left: 0;
       margin-right: -5px;
-      margin-top: -180px;
+      margin-top: 20px;
       padding-right: -10px;
     }
   
     .col-2 p {
       font-size: 16px;
-      margin-left: 35px;
+      margin-left: 50px;
       text-align: justify;
     }
   
@@ -601,22 +601,20 @@ img {
   }
 
   .row {
-    display: flex; /* Define o display como flex */
-    justify-content: space-between; /* Alinha as imagens com espaçamento igual entre elas */
+    display: flex;
   }
-  
+
   .clm {
-    flex: 1; /* Distribui o espaço igualmente entre as colunas */
-  }
-  
-  .clm:first-child {
-    margin-left: 20px;
+    flex: 1; 
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
   }
 
   .clm img {
     width: 290px;
-    max-width: 100%; /* Define a largura máxima da imagem para ocupar todo o espaço da coluna */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; 
+    height: auto; 
   }
   
 
@@ -628,7 +626,7 @@ img {
     }
     
     .row {
-      display:block; 
+      display:flex; 
       justify-content: space-between; 
     }
     
@@ -639,7 +637,7 @@ img {
     }
     
     .clm:first-child {
-      margin-left: 40px;
+      margin-left: 50px;
     }
     
     .clm img {
@@ -648,6 +646,7 @@ img {
       height: auto;
 
     }
+    
   }
 
   @media screen and (max-width: 468px) {
@@ -658,7 +657,7 @@ img {
     }
 
     .row {
-      display:block; 
+      display:flex; 
       justify-content: space-between; 
     }
     
@@ -669,13 +668,15 @@ img {
     }
     
     .clm:first-child {
-      margin-left: 24px;
+      margin-left: 4px;
     }
 
     .clm img {
-      width: 400px;
+      width: 249px;
       max-width: 100%; 
       height: auto;
 
     }
+
+  
   }
