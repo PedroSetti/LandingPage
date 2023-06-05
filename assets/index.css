@@ -240,6 +240,8 @@ img {
   body {
     width: 768;
   } 
+
+  
   .navbar-collapse{
     display: block;
     position: absolute;
@@ -253,7 +255,6 @@ img {
     padding-left: 1px;
     background-color: #fff;
     border: 1px solid #ccc;
-   
   }
 
   .navbar-nav {
@@ -261,21 +262,24 @@ img {
     margin-right: 10px;
     flex-direction: column;
     align-items: flex-start;
- justify-content: space-between;
- border: 1px solid red;
+    justify-content: space-between;
   }
 
   .nav-item {
-    width: 100%;
-    text-align: left;
-    border: 1px solid red;
+    max-width: 98%;
+    text-align: center;
+    text-decoration: underline;
     
   }
+
+
 
   .navbar-toggler {
     top: 0.5rem;
     right: 0.5rem;
   }
+
+
 
   .navbar-brand,
   .navbar-nav .nav-link {
@@ -286,6 +290,7 @@ img {
     font-family: 'PlayfairDisplay-Italic', sans-serif;
     word-spacing: 2px;
     margin-left: 10px;
+    
   }
 
   .navbar-nav .nav-link {
@@ -301,6 +306,8 @@ img {
   .navbar-nav .nav-item {
     margin-left: 12px;
   }
+
+  
 }
 
 @media (max-width: 468px) {
@@ -312,29 +319,41 @@ img {
 
   .navbar-collapse {
     max-width: 468px;
+    
   }
 
   .navbar-toggler {
     top: 1rem;
     right: 0.5rem;
+    
   }
 
   .navbar-nav {
-    display: block;
-    margin-right: 10px;
+    display: flex;
+    margin-right: 20px;
     flex-direction: column;
     align-items: flex-start;
+    
+   
   }
 
   .nav-item {
     width: 100%;
     height: auto;
-    text-align: left;
     display: block;
+    text-align: center;
   }
 
+  .nav-item:hover {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+  }
 
-
+  
   .navbar-brand,
   .navbar-nav .nav-link {
     display: block;
@@ -344,6 +363,7 @@ img {
     font-family: 'PlayfairDisplay-Italic', sans-serif;
     word-spacing: 2px;
     margin-left: 10px;
+    
   }
 
   .navbar-nav .nav-link {
@@ -352,6 +372,7 @@ img {
     padding-right: 4px;
     padding-left: 4px;
     padding-top: 40px;
+    
   }
 
   .navbar-nav .nav-link:hover {
@@ -362,6 +383,8 @@ img {
     margin-left: 12px;
   }
 }
+
+
 
 
 /* Navbar configuration normal screen */
@@ -380,6 +403,7 @@ img {
   font-family: 'PlayfairDisplay-Italic', sans-serif;
   word-spacing: 2px;
   margin-left: 10px;
+  
 }
 
 .navbar-brand img {

@@ -3,26 +3,76 @@
 <img src="./images/Capturar_edited.jpg" alt="Capturar">
 border: 1px solid red;
 
-      <p class="spaces"></p>
-      <span>Fundado em 1985, o escritório de advocacia Gomes & Gomes Advogados Associados oferece, 
-        através de seus serviços e atendimento personalizado, o que há de melhor em consultoria jurídica.
-      </span>
-      <p class="spaces"></p>
-        <span>Nossa estrutura organizacional conta com advogados, estagiários e funcionários de apoio administrativo.
-          O serviço profissional realmente qualificado é um dos pontos fortes de Gomes & Gomes Advogados Associados,
-          o que garante a qualidade de todos os serviços jurídicos prestados.
-        </span>
-        <p class="spaces"></p>
-        <span>
-          O escritório é reconhecido pela dedicação com que conduz os processos, contribuindo para o sucesso de seus clientes.
-           Nesse sentido, procuramos defender as demandas dos nossos clientes perante os tribunais locais e 
-           superiores com o máximo possível de zelo, cuidado e prudência.
-        </span>
-        <p class="spaces"></p>
-        <span>A presteza e a disposição desempenhada por todos os colaboradores,
-           juntamente com a efetiva participação dos nossos renomados sócios, 
-           faz com que o atendimento seja especializado e eficiente. 
-        </span>
-        <p class="spaces"></p>
-        <span>Somos a sua certeza de estar em boas mãos.</span>
-        <p class="spaces"></p>
+@media (max-width: 412px) {
+
+  body {
+    width: 468;
+    height: 100%;
+  }
+
+  .navbar-collapse {
+    max-width: 468px;
+    
+  }
+
+  .navbar-toggler {
+    top: 1rem;
+    right: 0.5rem;
+    
+  }
+
+  .navbar-nav {
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+   
+  }
+
+  .nav-item {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-item:hover {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'PlayfairDisplay-Italic', sans-serif;
+    word-spacing: 2px;
+    margin-left: 10px;
+    
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    display: inline-block;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 40px;
+    
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ff0000;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 12px;
+  }
+}
