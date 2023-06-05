@@ -207,13 +207,16 @@
   src:url("Fonts/f1feaed7-6bce-400a-a07e-a893ae43a680.eot?#iefix") format("eot"),url("../fonts/hzWTmxtxcFna.woff") format("woff"),url("../fonts/Pxlkhgi4J7tq.ttf") format("truetype"),url("Fonts/df234d87-eada-4058-aa80-5871e7fbe1c3.svg#df234d87-eada-4058-aa80-5871e7fbe1c3") format("svg");
 }
 
-
-html{
-  width: 100%;
-  height: 100%;
-  margin-right: 10px;
-  padding: 0;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#fff;
 }
+
+
 
 body {
   display: block;
@@ -648,6 +651,27 @@ img {
     padding: 8px;
     padding-bottom: 8px;
   }
+
+  .btn {
+    border: 2px solid #700000;
+    margin-top: 54px;
+    font-size: 11px;
+    margin-bottom: 54px;
+    align-items: center;
+    padding: 15px 30px; 
+    margin-left: 540px;
+  }
+
+  .btn:hover{
+    background-color:#700000;
+    color: #fff;
+    font-size: 11px;
+    margin-top: 54px;
+    margin-bottom: 54px;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
   
 
   @media screen and (max-width: 768px) {
@@ -678,6 +702,16 @@ img {
       height: auto;
       padding: 8px;
       padding-bottom: 8px;
+    }
+
+    .btn {
+      border: 2px solid #700000;
+      margin-top: 54px;
+      font-size: 11px;
+      margin-bottom: 54px;
+      align-items: center;
+      padding: 15px 30px; 
+      margin-left: 21s0px;
     }
     
   }
@@ -712,6 +746,16 @@ img {
       padding-bottom: 8px;
     }
 
+    .btn {
+      border: 2px solid #700000;
+      margin-top: 54px;
+      font-size: 11px;
+      margin-bottom: 54px;
+      align-items: center;
+      padding: 15px 30px; 
+      margin-left: 70px;
+    }
+
   }
 
   @media screen and (max-width: 412px) {
@@ -744,4 +788,25 @@ img {
       padding-bottom: 8px;
     }
 
+
+    .btn {
+      border: 2px solid #700000;
+      margin-top: 54px;
+      font-size: 11px;
+      margin-bottom: 54px;
+      align-items: center;
+      padding: 15px 30px; 
+      margin-left: 70px;
+    }
+  
+    .btn:hover {
+     background-color:  #700000;
+      margin-top: 54px;
+      font-size: 11px;
+      margin-bottom: 54px;
+      align-items: center;
+      padding: 15px 30px; 
+      margin-left: 70px;
+    }
+    
   }
